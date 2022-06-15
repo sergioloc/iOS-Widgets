@@ -12,7 +12,7 @@
         android:layout_centerVertical="true" />
 
     <TextView
-        android:id="@+id/appwidget_text"
+        android:id="@+id/tvBattery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
