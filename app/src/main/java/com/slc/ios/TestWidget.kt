@@ -32,10 +32,8 @@ internal fun updateAppWidget(
     val calendar = Calendar.getInstance()
     val seconds = calendar[Calendar.SECOND]
 
-    // Construct the RemoteViews object
-    val views = RemoteViews(context.packageName, R.layout.test_widget)
-    views.setTextViewText(R.id.appwidget_text, seconds.toString())
+    val views = RemoteViews(context.packageName, R.layout.widget_clock)
+    //views.setTextViewText(R.id.appwidget_text, seconds.toString())
 
-    // Instruct the widget manager to update the widget
     appWidgetManager.updateAppWidget(appWidgetId, views)
 }
